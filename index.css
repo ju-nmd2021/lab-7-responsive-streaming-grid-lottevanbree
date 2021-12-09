@@ -1,0 +1,164 @@
+html {
+  background-color: #0D0D0D;
+}
+main {
+  margin-top: 10vh;
+  color: white;
+}
+
+nav ul {
+  text-align: right;
+  padding-right: 3rem;
+  z-index: 2;
+  position: relative;
+}
+a {
+  font-weight: 300;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  padding-left: 5rem;
+}
+li {
+  display: inline-block;
+  padding-top: 1rem;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+li:nth-child(1) {
+  display: block;
+  text-align: left;
+}
+li img {
+  position: absolute;
+  top: 1.5rem;
+  max-width: 4vw;
+}
+
+li:nth-child(1) {
+  position: relative;
+}
+
+header {
+  position: relative;
+}
+
+footer {
+  margin: 2rem;
+  margin-top: 14rem;
+  text-align: center;
+  opacity: 0.5;
+}
+footer a {
+  font-size: 0.5rem;
+  display: inline;
+}
+footer img {
+  padding-bottom: 3rem;
+  max-width: 3%;
+}
+
+.categories, .genres {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.categories div, .genres div {
+  border-radius: 1rem;
+  align-items: center;
+}
+
+section img {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: 1px solid black;
+}
+
+h4, h5 {
+  text-align: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  padding-top: 5rem;
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-weight: 100;
+  font-size: 0.6rem;
+  padding-bottom: 3rem;
+}
+h6 {
+  font-family: sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+p {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.author {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+section img:hover {
+  border: 1px solid white;
+}
+
+@media (max-width: 1000px){
+  .categories, .genres {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  section img {
+    width: 25vw;
+    height: 25vw;
+  }
+}
+
+@media (max-width: 800px){
+  .categories, .genres {
+    grid-template-columns: 1fr 1fr;
+  }
+  section img {
+    width: 30vw;
+    height: 30vw;
+  }
+}
+
+@media (max-width: 600px){
+  .categories, .genres {
+    grid-template-columns: 1fr;
+  }
+  section img {
+    width: 50vw;
+    height: 50vw;
+  }
+}
